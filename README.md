@@ -1,4 +1,4 @@
-Hey guys, here's my summary of what I learn in [100 Days with Swift Challenge by Hacking with Swift](https://www.hackingwithswift.com/100). 
+Hey everyone, I joined "100 Days with Swift Challenge", and I want to share my learning progress by making the summary about what I learn from it. If you are interested in iOS Development and want to start learning about it, you can join this challenge [here](https://www.hackingwithswift.com/100). Let’s learn it together!
 
 # I. Introduction to Swift
 ## [Day 1](https://www.hackingwithswift.com/100/1) – variables, simple data types, and string interpolation
