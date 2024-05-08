@@ -57,7 +57,7 @@ When we code, we able to create many variables with various data type. In swift,
     //both has the same value & acceptable
     ```
     
-- #### Doubles and Booleans
+- #### Doubles
     - Double is similar with integer, but it is a different type! Double holds fractional values. Double is short of “double-precision floating-point number”. Such a long name though 😭.
     - **“Double”** keyword is used to assign integer data type
     
