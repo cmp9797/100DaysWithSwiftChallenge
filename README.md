@@ -5,7 +5,7 @@ Let’s learn together!🔥
 
 # I. Introduction to Swift
 <details>
-    <summary> 01 – VARIABLES, SIMPLE DATA TYPES, & STRING INTERPOLATION</summary>
+    <summary><h2> 01 – Variables, simple data types, and string interpolation</h2></summary>
 
 ### Variables
 - used to store a data and can be modified
@@ -17,6 +17,8 @@ var name = "Woody" // create a variable called "name" for the 1st time
 name = "buzz" //modify the name to "buzz"
 ```
 
+--- 
+
 ### Constants
 - If variable value can be modified, constants can’t once they created.
 - **```let```** keyword is used to create a constant.
@@ -26,6 +28,8 @@ name = "buzz" //modify the name to "buzz"
 let name = "Woody" // create a constant called "name"
 name = "buzz" //error
 ```
+
+--- 
 
 ### Simple Data Types
 Swift is a type-safe language. What is it?
@@ -68,9 +72,10 @@ When we code, we able to create many variables with various data type. In swift,
 - #### Booleans
     - Booleans is used to hold either true or false. Yes, it only have 2 values option.
     - **```Bool```** keyword is used to assign integer data type
+
+--- 
     
 ### String Interpolation
-
 This is one of Swift feature that allows you put the variables inside your string. You just need to wrap the variables with **backslash**, followed by **parentheses**.
 
 ```swift
@@ -81,10 +86,10 @@ var string = "Woody is \(age) years old"
 
 
 <details>
-    <summary> 02 –  COLLECTIONS (ARRAY, DICTIONARY, SET) and ENUMS </summary>
+    <summary><h2> 02 –  Collections (array, dictionary, set) and enums </h2></summary>
 
 ### Collections
-- #### Arrays
+1. #### Arrays
     - Collections of values which have the same type.
     - Swift array is able to store different type of value. You can use “Any” as the type annotation.
     - Array starts and ends with brackets, each item is separated with comma
@@ -101,17 +106,15 @@ var string = "Woody is \(age) years old"
         ```
         
     - If you want to read/access an item in specific index, you just need to put the numerical position:
-        
-        > array index starts from 0 (zero-based), and your code will crash if you use an invalid index
+        *array index starts from 0 (zero-based), and your code will crash if you use an invalid index*
         
         ```swift
         // read an item in index 1 which is apple
         fruits[1] 
         fruits[5] //error, because the array only have 3 items, so max index number is 2
         ```
-        
     
-- #### Sets
+2. #### Sets
     - Similar with array, but:
         - All items is unique, **no duplicate items**
         - The items are **not stored in any order**, they are stored automatically by system based on efficiency
@@ -128,17 +131,17 @@ var string = "Woody is \(age) years old"
         ```
 
   
-        > If you need to check if “a value” exist, you can use sets. Sets have better optimization in searching instead of array which need to search all over the index start from the first index.
-        >
-        > 
-        > Example: search a word in dictionary, phone number in contact list, etc.
+        *If you need to check if “a value” exist, you can use sets. Sets have better optimization in searching instead of array which need to search all over the index start from the first index.*
+         
+        *Example: search a word in dictionary, phone number in contact list, etc.*
         
-- #### Tuples
+3. #### Tuples
     - Similar with arrays, but:
         - The **size is fixed**, can’t be added or removed.
         - The **item value** **can** be **changed**, but the **item** **type can’t**.
         - The item can be **access using its numerical position or name**.
         - You can assume **tuple** as an **object**, and **the items** as the object’s **properties/ attributes**.
+
     
     ```swift
     var randomValue = (2, 1, 6, 3, 9)
@@ -150,21 +153,16 @@ var string = "Woody is \(age) years old"
     movie.title //result:"Coda", because it accessed the item name directly
     ```
     
-    
-    > Tuple’s item **can be accessed by the position number or the item name**. It **better to store different type** of value in tuple, because it would be confusing and ugly if you combines multiple data types in an array.
-    
+    *Tuple’s item **can be accessed by the position number or the item name**. It **better to store different type** of value in tuple, because it would be confusing and ugly if you combines multiple data types in an array.*
+  
+    **When to use?**
+    **- Tuple:** store a specific & fixed collection of related values 
+    **- Sets:** store an unique values, and need to search the item very quickly
+    **- Array:** store a collection of values that accept duplicates, the order of the items matters
 
-    > **When to use?**
-    >
-    > **- Tuple:** store a specific & fixed collection of related values
-    > 
-    > **- Sets:** store an unique values, and need to search the item very quickly
-    >
-    > **- Array:** store a collection of values that accept duplicates, the order of the items matters
-
-- #### Dictionaries
+#### 4. Dictionaries
     - Similar with arrays, but:
-        - The item stored using a name or identifiers. The item identifiers is called **key**.
+        - The item stored using a name or identifiers. The item identifiers is called **```key```**.
         - The items **not store in an index**. So, You call the items with the key, not the index.
         
         ```swift
@@ -183,7 +181,6 @@ var string = "Woody is \(age) years old"
         ```
         
     - ##### Default values in dictionary
-        
         When we ask for a value of key that doesn’t exist, it will returns a **nil** value. We can use “default” to get back an default value when the data we want is not exist. It’s like a “backup value”.
         
         ```swift
@@ -194,16 +191,15 @@ var string = "Woody is \(age) years old"
         finalScore["Student3", default:0] // get the default value "0" instead of nil because Student3 didn't exist
         ```
         
-        > Default value is optional, based on your need.
+      *Default value is optional, based on your need.*
         
+---
 
 ### Creating Empty Collections
-
 Here is the syntax of creating empty collections:
 
-- #### Array
-    
-    Array can be created using Swift special syntax or angle bracket syntax
+1. #### Array
+    *Array can be created using Swift special syntax or angle bracket syntax*
     
     ```swift
     //swift special syntax
@@ -214,10 +210,8 @@ Here is the syntax of creating empty collections:
     var myArray = Array<Int>()
     ```
     
-
-- #### Dictionary
-    
-    Same with array, dictionary can be created using Swift special syntax or angle bracket syntax
+2. #### Dictionary
+    *Same with array, dictionary can be created using Swift special syntax or angle bracket syntax*
     
     ```swift
     //swift special syntax
@@ -231,29 +225,27 @@ Here is the syntax of creating empty collections:
     myDictionary["EN"] = "English"
     ```
     
-- #### Set
-    
-    Set only can be created using angle bracket syntax
+3. #### Set
+    *Set only can be created using angle bracket syntax*
     
     ```swift
     var mySet = Array<Int>()
     ```
     
-- #### Tuple
-    
-    It’s rare to use an “empty tuple”, because we need to set the items directly when creating it. But, we can model a missing tuple value. We need to make the tuple *optional*.
+4. #### Tuple
+    *It’s rare to use an “empty tuple”, because we need to set the items directly when creating it. But, we can model a missing tuple value. We need to make the tuple **optional**.*
     
     ```swift
     var myTuple: (key: String, val: Int)? = nil
     ```
     
-    *Note: There is an empty tuple, but it used as the return type of function void (function that return nothing)* 
-    
+    *Note: There is an empty tuple, but it used as the return type of function void (function that return nothing)*     
     [Swift: Declaring empty tuples](https://stackoverflow.com/questions/33357892/swift-declaring-empty-tuples)
     
 
-> An empty array can help you to calculate your data, especially when you don’t know or didn’t have any data at first.
-> 
+> *An empty array can help you to calculate your data, especially when you don’t know or didn’t have any data at first.*
+
+---
 
 ### Enumerations (enums)
 
@@ -278,7 +270,6 @@ Here is the syntax of creating empty collections:
     *This prevent you from accidentally using different strings each time.*
     
 - #### Associated Values
-    
     We can add **additional information** to an enum case.
     
     ```swift
@@ -293,9 +284,9 @@ Here is the syntax of creating empty collections:
     ```
     
 - #### Raw Values
-    
     Raw value used to add a “**meaning**” of an enum case.
-    
+
+  
     - Define the type of raw values after the variable name.
     - In case of number type of raw value, Swift automatically assign each case with a number starts from 0. If you just set an integer value on the first item only, the rest will automatically generated. But it only works in Integer value only.
     
@@ -334,6 +325,7 @@ Here is the syntax of creating empty collections:
         case high = 5
     }
     ```
+    
 </details>
 
 
