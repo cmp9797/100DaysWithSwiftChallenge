@@ -160,7 +160,7 @@ var string = "Woody is \(age) years old"
     **- Sets:** store an unique values, and need to search the item very quickly
     **- Array:** store a collection of values that accept duplicates, the order of the items matters
 
-#### 4. Dictionaries
+4. #### Dictionaries
     - Similar with arrays, but:
         - The item stored using a name or identifiers. The item identifiers is called **```key```**.
         - The items **not store in an index**. So, You call the items with the key, not the index.
