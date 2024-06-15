@@ -60,7 +60,7 @@ movie.title //result:"Coda", accessed with the item name
 // Reccomended to use tuple in storing different type of values rather than array
 
 // TUPLE vs SETS vs ARRAY
-// Tuple: store a specific &amp; fixed collection of related values 
+// Tuple: store a specific and fixed collection of related values 
 // Sets: store an unique values, and need to search the item very quickly 
 // Array: store a group of values that accept duplicates, matters the item's order
 
@@ -195,7 +195,7 @@ PriorityDouble(rawValue: 2.7) // returns nil
 /* --------------------------------------------------------------------------------- */
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 5635}</string>
+			<string>{0, 5637}</string>
 			<key>OriginalContent</key>
 			<string>
 </string>

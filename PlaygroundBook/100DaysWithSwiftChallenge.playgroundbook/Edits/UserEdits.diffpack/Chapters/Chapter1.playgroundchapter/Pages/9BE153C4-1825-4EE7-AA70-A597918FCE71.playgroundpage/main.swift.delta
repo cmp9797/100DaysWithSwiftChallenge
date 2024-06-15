@@ -10,7 +10,7 @@
 			<key>ModifiedContent</key>
 			<string>import Foundation
 
-/* VARIABLES &amp; CONSTANT */
+/* VARIABLES and CONSTANT */
 // VARIABLE
 // the value CAN be modified, keyword: "var"
 var name = "Woody" // create a variable called "name" for the 1st time
@@ -70,7 +70,7 @@ introduction = "Hello, I'm Woody. I am \(age) years old"
 /* --------------------------------------------------------------------------------- */
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 1711}</string>
+			<string>{0, 1713}</string>
 			<key>OriginalContent</key>
 			<string>
 </string>
