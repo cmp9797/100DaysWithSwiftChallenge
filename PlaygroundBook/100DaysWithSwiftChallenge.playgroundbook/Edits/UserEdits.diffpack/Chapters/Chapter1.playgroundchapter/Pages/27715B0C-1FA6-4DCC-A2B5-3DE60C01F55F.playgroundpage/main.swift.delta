@@ -25,8 +25,8 @@ let myFruits : [String] = [grape, melon] // using the type annotations
 let mixedData : [Any] = ["Hello", 0, "This is text", 0.93]
 
 // array index is zero based 
-fruits[1] 
-fruits[5] //error, because the array only have 3 items, so max index number is 2
+print(fruits[1]) 
+//fruits[5] //error, because the array only have 3 items, so max index number is 2
 
 // SET
 // similar with array, but NO DUPLICATE ITEMS, and NOT STORED IN ANY ORDER
@@ -53,8 +53,8 @@ rainbow = Set(["red", "yellow", "green", "red"]) // the second entry of "red" is
 var randomValue = (2, 1, 6, 3, 9)
 var movie = (title:"Coda", dateReleased:"2021", genre:"comedy-drama")
 //access the items/properties
-movie.0 // result:"Coda", because with the item position
-movie.title //result:"Coda", accessed with the item name
+print(movie.0) // result:"Coda", because with the item position
+print(movie.title) //result:"Coda", accessed with the item name
 
 // Note:
 // Reccomended to use tuple in storing different type of values rather than array
@@ -73,7 +73,7 @@ let finalScoreClass1 = [
     "Student2": 80,
 ]
 //call the items with the key, not the index.
-finalScoreClass1["Student1"] // get the final score of Student1
+print(finalScoreClass1["Student1"]) // get the final score of Student1
 
 // use type annotation
 var finalScoreClass2 : [String : Int] = [
@@ -89,7 +89,7 @@ finalScoreClass2 = [
     "Student1": 90,
     "Student2": 80,
 ]
-finalScoreClass2["Student3", default:0] // get the default value "0" instead of nil
+print(finalScoreClass2["Student3", default:0]) // get the default value "0" instead of nil
 
 /* --------------------------------------------------------------------------------- */
 /* CREATE EMPTY COLLECTIONS */
@@ -160,7 +160,7 @@ enum PriorityInt: Int {
     case medium
     case high
 }
-PriorityInt(rawValue: 2) // returns "medium"
+print(PriorityInt(rawValue: 2)) // returns "medium"
 
 // Double Type
 enum PriorityDouble: Double {
@@ -168,9 +168,9 @@ enum PriorityDouble: Double {
     case medium
     case high
 }
-PriorityDouble(rawValue: 2) // returns "medium"
-PriorityDouble(rawValue: 2.0) // returns "medium"
-PriorityDouble(rawValue: 2.7) // returns nil
+print(PriorityDouble(rawValue: 2)) // returns "medium"
+print(PriorityDouble(rawValue: 2.0)) // returns "medium"
+print(PriorityDouble(rawValue: 2.7)) // returns nil
 
 /*
  // Do not do this! It'll give you error!
@@ -195,7 +195,7 @@ PriorityDouble(rawValue: 2.7) // returns nil
 /* --------------------------------------------------------------------------------- */
 </string>
 			<key>ModifiedRange</key>
-			<string>{0, 5637}</string>
+			<string>{0, 5702}</string>
 			<key>OriginalContent</key>
 			<string>
 </string>
